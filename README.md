@@ -1,10 +1,16 @@
 # Homework Assignment 6
 
 
-In the urgent care simulation model we developed in class, let's assume that 
+**Overview**. In the urgent care simulation model we developed in class, let's assume that 
 patients will also get screened for depression during their exam. If the result is positive, they will be 
 seen by an on-site mental health specialist before leaving the urgent care. 
-Make the necessary changes to simulate the operation of this new system.
+Here we want to make the necessary changes to the model we implemented in the class
+to simulate the operation of this new system.
+
+**Problem 1: Flowcharts (Weight 4)**. 
+
+
+**Problem 2: Simulation (Weight 10)**. 
 
 Run your simulation with these assumptions:
 - 20 hours of operation
