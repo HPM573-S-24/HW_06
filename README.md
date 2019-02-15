@@ -7,11 +7,15 @@ seen by an on-site mental health specialist before leaving the urgent care.
 Here we want to make the necessary changes to the model we implemented in the class
 to simulate the operation of this new system.
 
-**Problem 1: Flowcharts (Weight 4)**. 
+**Problem 1: Flowcharts (Weight 4)**. Update the flowcharts of processing the events of this system. 
+You can use any program your wish to draw the flowcharts. Include the flowcharts in your submission.
+Note that this new model involves a new event to represent the "End of Mental Health Care". 
 
+_Hint:_ At the time you are creating a patient, you can also decide decide 
+whether a patient will get diagnosed with depression during their visit with a flip of a coin. 
 
 **Problem 2: Simulation (Weight 10)**. 
-
+Modify the code of the urgent care model to incorporate the addition of the mental health specialist. 
 Run your simulation with these assumptions:
 - 20 hours of operation
 - 10 exam rooms,
@@ -30,4 +34,9 @@ Report:
     - Patients waiting to see the mental health specialist
     - Utilization of mental health specialist
     
- 
+_Hint:_ Modify the `__init__` method of the `Patient` class so that it takes `if_with_depression` as an argument,
+and set `self.ifWithDepression = if_with_depression` so that you can know the depression status of the
+patient during the simulation. 
+At the time you are creating a patient, decide about the depression status 
+of the patient with a coin flip. At the end of the exam, check the patient's `ifWithDepression` 
+and if it is `True`, send the patient to the mental health specialty unit. 
