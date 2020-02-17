@@ -25,7 +25,7 @@ Run your simulation with these assumptions:
 - Proportion of patients screened positive for depression 10%, 
 - Duration of mental health consultation exponentially distributed with mean 20 minutes.
 
-Report the number of patients who were seen by a physician 
+Report the number of patients arrvied and who were seen by a physician 
 and the mental health specialist before the urgent care closed.
 
 _Hint:_ Modify the `__init__` method of the `Patient` class so that it takes `if_with_depression` as an argument,
