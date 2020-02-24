@@ -5,7 +5,8 @@
 patients will also get screened for depression during their exam. If the result is positive, they will be 
 seen by an on-site mental health specialist before leaving the urgent care. 
 Here we want to make the necessary changes to the model we implemented in the class
-to simulate the operation of this new system.
+to simulate the operation of this new system. Feel free to use any of the files we worked on durin the class 
+(you can find them under the branch 'P1_Simulation_Solution' of [this repository](https://github.com/HPM573/Lab_DiscreteEventSimulation/tree/P1_Simulation_Solution))
 
 **Problem 1: Flowcharts (Weight 4)**. Update the flowcharts of processing the events of this system. 
 You can use any program your wish to draw the flowcharts. Include the flowcharts in your submission.
