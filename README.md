@@ -36,15 +36,16 @@ At the time you are creating a patient, decide about the depression status
 of the patient with a coin flip. At the end of the exam, check the patient's `ifWithDepression` 
 and if it is `True`, send the patient to the mental health specialty unit. 
 
-_Hint:_
+_Hint:_ If a patient has depression, they will go to see the mental health specialist after completing their visit with the primary care physician. Therefore, we need to modidify the `remove_patient` method of the `Physician` class to get the patient who finished the exam. One may think that the following code would work:
 
 ```
     def remove_patient(self):
         """ :returns the patient that was being served in this exam room"""
 
         return self.patientBeingServed
- '''
- this 
+'''
+
+
 ```
     def remove_patient(self):
         """ :returns the patient that was being served in this exam room"""
@@ -57,4 +58,4 @@ _Hint:_
         self.isBusy = False
 
         return returned_patient
-  '''
+'''
