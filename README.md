@@ -39,23 +39,22 @@ and if it is `True`, send the patient to the mental health specialty unit.
 _Hint:_ If a patient has depression, they will go to see the mental health specialist after completing their visit with the primary care physician. Therefore, we need to modidify the `remove_patient` method of the `Physician` class to get the patient who finished the exam. One may think that the following code would work:
 
 ```
-    def remove_patient(self):
-        """ :returns the patient that was being served in this exam room"""
+def remove_patient(self):
+    """ :returns the patient that was being served in this exam room"""
 
-        return self.patientBeingServed
-'''
+    return self.patientBeingServed
+
 
 
 ```
-    def remove_patient(self):
-        """ :returns the patient that was being served in this exam room"""
+def remove_patient(self):
+    """ :returns the patient that was being served in this exam room"""
 
-        # store the patient to be returned and set the patient that was being served to None
-        returned_patient = self.patientBeingServed
-        self.patientBeingServed = None
+    # store the patient to be returned and set the patient that was being served to None
+    returned_patient = self.patientBeingServed
+    self.patientBeingServed = None
 
-        # the exam room is idle now
-        self.isBusy = False
+    # the exam room is idle now
+    self.isBusy = False
 
-        return returned_patient
-'''
+    return returned_patient
