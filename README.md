@@ -22,9 +22,9 @@ Run your simulation with these assumptions:
 - 10 exam rooms,
 - 1 mental health specialist on site,
 - Patient inter-arrival time exponentially distributed with mean 1 minutes, 
-- Exam duration exponentially distributed with mean 10 minutes,
-- Proportion of patients screened positive for depression 10%, 
-- Duration of mental health consultation exponentially distributed with mean 20 minutes.
+- For primary-care physicians, the exam duration is exponentially distributed with mean 10 minutes,
+- Proportion of patients with depression 10%, 
+- For mental health specialist, the duration of mental health consultation is exponentially distributed with mean 20 minutes.
 
 Report the number of patients arrvied and who were seen by a physician 
 and the mental health specialist before the urgent care closed.
