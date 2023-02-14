@@ -41,20 +41,36 @@ _Hint:_ If a patient has depression, they will go to see the mental health speci
 ```
 def remove_patient(self):
     """ :returns the patient that was being served in this exam room"""
-
+    
+    # return the patient being served 
     return self.patientBeingServed
+    
+    # set the patient being serive to none
+    self.patientBeingServed = None
+    
+    # the physician is idle now
+    self.isBusy = False
+```
+The issue with the above code is that the second line 
+(`self.patientBeingServed = None`) never gets executed since the code exists this function right after executing
+`return self.patientBeingServed`.
 
-
+The code below resolves this issue by first storing the patient 
+that is to be returned in the variable `returned_patient`.
 
 ```
 def remove_patient(self):
     """ :returns the patient that was being served in this exam room"""
 
-    # store the patient to be returned and set the patient that was being served to None
+    # store the patient to be returned
     returned_patient = self.patientBeingServed
+    
+    # set the patient being serive to none
     self.patientBeingServed = None
 
-    # the exam room is idle now
+    # the physician is idle now
     self.isBusy = False
-
+    
+    # return the patient that was being served
     return returned_patient
+```
