@@ -35,3 +35,26 @@ patient during the simulation.
 At the time you are creating a patient, decide about the depression status 
 of the patient with a coin flip. At the end of the exam, check the patient's `ifWithDepression` 
 and if it is `True`, send the patient to the mental health specialty unit. 
+
+_Hint:_
+
+```
+    def remove_patient(self):
+        """ :returns the patient that was being served in this exam room"""
+
+        return self.patientBeingServed
+ '''
+ this 
+```
+    def remove_patient(self):
+        """ :returns the patient that was being served in this exam room"""
+
+        # store the patient to be returned and set the patient that was being served to None
+        returned_patient = self.patientBeingServed
+        self.patientBeingServed = None
+
+        # the exam room is idle now
+        self.isBusy = False
+
+        return returned_patient
+  '''
