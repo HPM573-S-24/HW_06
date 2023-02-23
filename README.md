@@ -19,7 +19,7 @@ whether a patient will get diagnosed with depression during their visit with a f
 Modify the code of the urgent care model to incorporate the addition of the mental health specialist. 
 Run your simulation with these assumptions:
 - 20 hours of operation
-- 10 exam rooms,
+- 10 primary-care physicians,
 - 1 mental health specialist on site,
 - Patient inter-arrival time exponentially distributed with mean 1 minutes, 
 - For primary-care physicians, the exam duration is exponentially distributed with mean 10 minutes,
