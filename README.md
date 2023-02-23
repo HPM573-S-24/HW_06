@@ -40,7 +40,7 @@ _Hint:_ If a patient has depression, they will go to see the mental health speci
 
 ```
 def remove_patient(self):
-    """ :returns the patient that was being served in this exam room"""
+    """ :returns the patient that was being served in this physician"""
     
     # return the patient being served 
     return self.patientBeingServed
@@ -60,7 +60,7 @@ that is to be returned in the variable `returned_patient`.
 
 ```
 def remove_patient(self):
-    """ :returns the patient that was being served in this exam room"""
+    """ :returns the patient that was being served in this physician"""
 
     # store the patient to be returned
     returned_patient = self.patientBeingServed
